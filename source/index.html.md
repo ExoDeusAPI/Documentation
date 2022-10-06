@@ -12,6 +12,7 @@ includes:
   - introduction.md
   - firstSteps.md
   - lore.md
+  - responses.md
   - errors.md
 
 search: true

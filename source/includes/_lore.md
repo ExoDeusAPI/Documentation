@@ -1,40 +1,25 @@
-# Kittens
+# Lore
 
-## Get All Kittens
+## Get a random piece of knowledge
 
 ```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
+
 ```
 
 This endpoint retrieves all kittens.
 
+### Rate limit
+
+60 requests/minute.
+
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://api.exod.eus/lore`
 
 ### Query Parameters
 
