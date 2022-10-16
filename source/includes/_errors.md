@@ -42,7 +42,7 @@ Code | Status | Description
 418 | I'm a Teapot | The request for coffee can not be satisfied by a teapot.
 426 | Upgrade Required |The client should switch to a different protocol such as TLSv1.3.
 429 | Too Many Requests | The client has sent too many requests in a given amount of time. This can also be due to an over-usage of your IP address. Please adopt exponential backoff to avoid banning.
-431 | | The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
+431 | Request Header Fields Too Large | The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
 500 | Internal Server Error | The server can not process the request due to an unexpected server error. This is the generic error that is sent when none of the following 5xx errors is applicable. This request should not be repeated.
 501 | Not Implemented | This resource is currently not available, but will probably be in the future. This may also mean that the resource is available on other servers, such as the `development` or the `beta` servers.
 502 | Bad Gateway | The server is acting as a reverse proxy and received an invalid response from the upstream server.
