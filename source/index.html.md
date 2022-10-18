@@ -14,6 +14,7 @@ includes:
   - lore.md
   - responses.md
   - errors.md
+  - issues.md
 
 search: true
 
