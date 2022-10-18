@@ -34,7 +34,7 @@ Code | Status | Description
 405 | Method Not Allowed | The request method is not supported for the requested resource. For example, a GET request to a resource that requires data to be presented via POST, or a PUT request to a read-only resource. This request should not be repeated.
 406 | Not Acceptable | The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
 408 | Request Timeout | The server timed out waiting for the request. The client did not produce a request within the time that the server was prepared to wait. This request may be repeated, but faster.
-409 | Conflict | The request could not be processed because of conflict in the current state of the resource. This may occur as the requests of two users clash and yours loses.
+409 | Conflict | The request could not be processed because of conflict in the current state of the resource. This may occur as the requests of two users clash and yours loses, or you are trying to register an existing account, for example.
 410 | Gone | The requested resource was previously in use but is no longer available and will not be available again. This resource has been intentionally removed and should not be requested in the future.
 413 | Payload Too Large | The request is larger than the server is willing to process.
 414 | URI Too Long | The request URI is longer than the server is willing to process.
