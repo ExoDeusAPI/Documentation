@@ -17,8 +17,8 @@ Will return a random piece of knowledge that you might find useful. Or not.
 
 ### HTTP Request
 
-`GET http://api.exod.eus/lore`
+`GET https://api.exod.eus/lore`
 
 ### Body Parameters
 
-None.
+None

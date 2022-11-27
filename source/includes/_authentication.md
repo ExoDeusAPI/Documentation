@@ -36,7 +36,7 @@ If you have received the authentication mail in your spam folder, please conside
 
 ### HTTP Request
 
-`GET http://api.exod.eus/register`
+`GET https://api.exod.eus/register`
 
 ### Body Parameters
 
