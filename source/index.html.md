@@ -2,6 +2,7 @@
 title: ExoDeus
 
 language_tabs: # must be one of https://git.io/vQNgJ
+  - shell
   - javascript
 
 toc_footers:
@@ -10,7 +11,8 @@ toc_footers:
 
 includes:
   - introduction.md
-  - firstSteps.md
+  - authentication.md
+  - information.md
   - lore.md
   - responses.md
   - errors.md

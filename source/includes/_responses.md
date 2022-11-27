@@ -2,7 +2,7 @@
 
 ## Success
 
-> Responses return JSON structured like this:
+> Response JSON structure:
 
 ```json
 {
