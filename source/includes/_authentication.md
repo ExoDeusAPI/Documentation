@@ -42,6 +42,6 @@ If you have received the authentication mail in your spam folder, please conside
 
 Parameter | Required | Description
 --------- | -------- | -----------
-email     | true     | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 24.
-username  | true     | The username for your account. Must be unique. Minimum length: 3. Maximum length: 16. 
-password  | true     | The username for your account. Must be unique. Minimum length: 12. Maximum length: 24. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
+email     | true     | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 128.
+username  | true     | The username for your account. Must be unique. Minimum length: 4. Maximum length: 16. 
+password  | true     | The username for your account. Must be unique. Minimum length: 12. Maximum length: 64. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
