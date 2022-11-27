@@ -34,7 +34,7 @@ Code | Status | Description
 405 | Method Not Allowed | The request method is not supported for the requested resource. For example, a GET request to a resource that requires data to be presented via POST, or a PUT request to a read-only resource. This request should not be repeated.
 406 | Not Acceptable | The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
 408 | Request Timeout | The server timed out waiting for the request. The client did not produce a request within the time that the server was prepared to wait. This request may be repeated, but faster.
-409 | Conflict | The request could not be processed because of conflict in the current state of the resource. This may occur as the requests of two users clash and yours loses, or you are trying to register an existing account, for example.
+409 | Conflict | The request could not be processed because of conflict in the current state of the resource. This may occur as the requests of two users clash and yours loses, for example.
 410 | Gone | The requested resource was previously in use but is no longer available and will not be available again. This resource has been intentionally removed and should not be requested in the future.
 413 | Payload Too Large | The request is larger than the server is willing to process.
 414 | URI Too Long | The request URI is longer than the server is willing to process.
@@ -45,6 +45,9 @@ Code | Status | Description
 431 | Request Header Fields Too Large | The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
 460 | Email Already Exists | You attempted to sign up with an existing email address.
 461 | Username Already Exists | You attempted to sign up with an existing username.
+462 | Email does not Exist | You attempted to login with an email address that does not exist.
+463 | Username does not Exist | You attempted to interact with a username that does not exist.
+470 | Key Error | Something went wrong while creating, reading or verifying your token. This is a generic error code and the message will contain further information.
 500 | Internal Server Error | The server can not process the request due to an unexpected server error. This is the generic error that is sent when none of the following 5xx errors is applicable. This request should not be repeated.
 501 | Not Implemented | This resource is currently not available, but will probably be in the future. This may also mean that the resource is available on other servers, such as the `development` or the `beta` servers.
 502 | Bad Gateway | The server is acting as a reverse proxy and received an invalid response from the upstream server.
