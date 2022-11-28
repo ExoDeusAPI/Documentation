@@ -1,8 +1,8 @@
 # Authentication
 
-ExoDeus uses API keys to allow you to access the API. In order to obtain an API key, you must first register an account with an email address (/register). Once you have submitted the required information in the correct format, you will have to verify the autenticity of your email address(/verify).
+ExoDeus uses API keys to allow you to access the API. In order to obtain an API key, you must first register an account with an email address (`/register`). Once you have submitted the required information in the correct format, you will have to verify the autenticity of your email address(`/verify`).
 
-Once your account is verified, you may request an API Key (/apikey) using your credentials. This endpoint can also be used to regenerate your API Key. Note that this will invalidate your previous API Key.
+Once your account is verified, you may request an API Key (`/api-key`) using your credentials. This endpoint can also be used to regenerate your API Key. Note that this will invalidate your previous API Key.
 
 In (almost) all further calls to the API, you will need to include your API Key.
 
@@ -36,7 +36,7 @@ If you have received the authentication mail in your spam folder, please conside
 
 ### HTTP Request
 
-`GET https://api.exod.eus/register`
+`POST https://api.exod.eus/register`
 
 ### Body Parameters
 
@@ -82,3 +82,43 @@ A clickable link will be sent to the email address you provided to the /register
 Parameter | Required | Description
 --------- | -------- | -----------
 token     | true     | This is a special token generated solely to verify your account.
+
+
+## API Key
+
+```shell
+```
+
+```javascript
+```
+
+> Response JSON structure:
+
+```json
+{ 
+  "code": 200, 
+  "status": "OK", 
+  "content": [API Key]
+}
+```
+
+Used to get an API Key. This key will be required in *most* API calls. This endpoint can also be used to regenerate your key. Note that this will invalidate your previous API Key.
+
+<aside class="notice">
+All API Keys are valid for 24 hours. It is up to you to renew your key in time to continue using the API.
+</aside>
+
+### Rate limit
+
+1 request/minute.
+
+### HTTP Request
+
+`POST https://api.exod.eus/api-key`
+
+### Body Parameters
+
+Parameter | Required | Description
+--------- | -------- | -----------
+email     | true     | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 128.
+password  | true     | The username for your account. Must be unique. Minimum length: 12. Maximum length: 64. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
