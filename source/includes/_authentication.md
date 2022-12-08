@@ -40,11 +40,11 @@ If you have received the authentication mail in your spam folder, please conside
 
 ### Body Parameters
 
-Parameter | Required | Description
---------- | -------- | -----------
-email     | true     | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 128.
-username  | true     | The username for your account. Must be unique. Minimum length: 4. Maximum length: 16. 
-password  | true     | The username for your account. Must be unique. Minimum length: 12. Maximum length: 64. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
+Parameter | Required | Type    | Description
+--------- | -------- | ------- | -----------
+email     | true     | String  | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 128.
+username  | true     | String  | The username for your account. Must be unique. Minimum length: 4. Maximum length: 16. 
+password  | true     | String  | The username for your account. Must be unique. Minimum length: 12. Maximum length: 64. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
 
 
 ## Verify
@@ -79,9 +79,9 @@ A clickable link will be sent to the email address you provided to the /register
 
 ### Query Parameters
 
-Parameter | Required | Description
---------- | -------- | -----------
-token     | true     | This is a special token generated solely to verify your account.
+Parameter | Required | Type    | Description
+--------- | -------- | ------- | -----------
+token     | true     | String  | This is a special token generated solely to verify your account.
 
 
 ## API Key
@@ -118,7 +118,8 @@ All API Keys are valid for 24 hours. It is up to you to renew your key in time t
 
 ### Body Parameters
 
-Parameter | Required | Description
---------- | -------- | -----------
-email     | true     | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 128.
-password  | true     | The username for your account. Must be unique. Minimum length: 12. Maximum length: 64. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
+Parameter | Required | Type    | Description
+--------- | -------- | ------- | -----------
+email     | true     | String  | The email address for your account. Must be unique. Minimum length: 5. Maximum length: 128.
+password  | true     | String  | The username for your account. Must be unique. Minimum length: 12. Maximum length: 64. Must contain: 2 lowercase letters, 2 capital letters, 2 digits, 2 special characters.
+expiresIn | false    | Integer | The amount (in seconds) before the API Key expires. Minimum: 3600. Maximum: 86400.
