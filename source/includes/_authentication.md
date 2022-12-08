@@ -105,7 +105,7 @@ token     | true     | String  | This is a special token generated solely to ver
 Used to get an API Key. This key will be required in *most* API calls. This endpoint can also be used to regenerate your key. Note that this will invalidate your previous API Key.
 
 <aside class="notice">
-All API Keys are valid for 24 hours. It is up to you to renew your key in time to continue using the API.
+All API Keys are valid for up to 24 hours. It is up to you to renew your key in time to continue using the API.
 </aside>
 
 ### Rate limit

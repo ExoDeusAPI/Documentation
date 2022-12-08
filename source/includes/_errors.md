@@ -45,7 +45,7 @@ Code | Status | Description
 431 | Request Header Fields Too Large | The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
 460 | Email Already Exists | You attempted to sign up with an existing email address.
 461 | Username Already Exists | You attempted to sign up with an existing username.
-462 | Email does not Exist | You attempted to login with an email address that does not exist.
+462 | Email does not Exist | You attempted to login with an email address that does not exist or that has not been verified.
 463 | Username does not Exist | You attempted to interact with a username that does not exist.
 470 | Key Error | Something went wrong while creating, reading or verifying your token. This is a generic error code and the message will contain further information.
 500 | Internal Server Error | The server can not process the request due to an unexpected server error. This is the generic error that is sent when none of the following 5xx errors is applicable. This request should not be repeated.
